@@ -11,12 +11,14 @@ import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
     private EditText lutemonName;
+    private LutemonView lutemonView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
         lutemonName = findViewById(R.id.editTxtLutemonName);
+        lutemonView = findViewById(R.id.lutemonView);
     }
 
     public void createNewLutemon(View view) {
