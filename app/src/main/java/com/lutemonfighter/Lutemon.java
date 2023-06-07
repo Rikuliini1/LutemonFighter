@@ -14,6 +14,8 @@ public class Lutemon implements Serializable {
     protected int lutemonTypeIcon;
     protected int lutemonDeleteIcon;
 
+
+
     public Lutemon(String name, String type, int attack, int defense, int experience, int health, int maxHealth) {
         this.name = name;
         this.type = type;
@@ -49,11 +51,45 @@ public class Lutemon implements Serializable {
     public int getId() {
         return id;
     }
+
     public int getLutemonTypeIcon() {
         return lutemonTypeIcon;
     }
     public int getLutemonDeleteIcon() {
         return lutemonDeleteIcon;
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public void setMaxHealth(int maxHealth) {
+        this.maxHealth = maxHealth;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+
     }
 }
 

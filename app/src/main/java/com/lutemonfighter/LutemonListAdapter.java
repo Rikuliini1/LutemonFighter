@@ -32,6 +32,7 @@ public class LutemonListAdapter extends RecyclerView.Adapter<LutemonViewHolder> 
         holder.lutemonType.setText(lutemons.get(position).getType());
         holder.attackAndDefense.setText("Attack: " + lutemons.get(position).getAttack() + "  Defense: " + lutemons.get(position).getDefense());
         holder.experienceAndMaxHealth.setText("Experience: " + lutemons.get(position).getExperience() + "   MaxHealth: " + lutemons.get(position).getMaxHealth());
+
         holder.lutemonTypeImage.setImageResource(lutemons.get(position).getLutemonTypeIcon());
         holder.lutemonDeleteIcon.setImageResource(lutemons.get(position).getLutemonDeleteIcon());
         holder.lutemonDeleteIcon.setOnClickListener(view -> {
@@ -47,6 +48,7 @@ public class LutemonListAdapter extends RecyclerView.Adapter<LutemonViewHolder> 
         holder.lutemonBattleButton.setOnClickListener(view -> {
             int pos = holder.getAdapterPosition();
         });
+
     }
 
     @Override

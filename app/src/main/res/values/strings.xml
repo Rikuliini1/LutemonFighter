@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LutemonFighter</string>
+    <string name="battle" />
 </resources>
