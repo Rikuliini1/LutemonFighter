@@ -6,6 +6,8 @@ public class EarthLutemon extends Lutemon {
         super(name, "Earth", 7, 2, 0, 18, 18);
 
         lutemonDeleteIcon = R.drawable.delete_icon;
+        lutemonTypeIcon = R.drawable.earth;
+
 
     }
 }

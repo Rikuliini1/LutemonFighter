@@ -57,6 +57,7 @@ public class Lutemon implements Serializable {
     }
     public int getLutemonDeleteIcon() {
         return lutemonDeleteIcon;
+    }
 
 
     public void setName(String name) {

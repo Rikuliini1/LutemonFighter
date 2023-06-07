@@ -19,7 +19,6 @@ public class BattleActivity extends AppCompatActivity {
 
     private Storage storage;
 
-    private ArrayList<Lutemon> lutemons = new ArrayList<>();
 
 
 

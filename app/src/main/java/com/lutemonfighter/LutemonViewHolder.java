@@ -12,9 +12,7 @@ public class LutemonViewHolder extends RecyclerView.ViewHolder {
     ImageView lutemonTypeImage, lutemonDeleteIcon;
     TextView lutemonName, lutemonType, attackAndDefense, experienceAndMaxHealth;
     Button lutemonTrainButton, lutemonBattleButton;
-
-    ImageView lutemonTypeImage;
-    TextView lutemonName, lutemonType, attackAndDefense, experienceAndMaxHealth;
+    
 
 
     public LutemonViewHolder(@NonNull View item) {

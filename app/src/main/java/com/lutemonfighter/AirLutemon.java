@@ -6,6 +6,8 @@ public class AirLutemon extends Lutemon {
         super(name, "Air", 8, 1, 0, 17, 17);
 
         lutemonDeleteIcon = R.drawable.delete_icon;
+        lutemonTypeIcon = R.drawable.air;
+
 
     }
 }
