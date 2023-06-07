@@ -2,6 +2,9 @@ package com.lutemonfighter;
 
 import android.content.Context;
 import android.widget.Toast;
+
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -25,6 +28,18 @@ public class Storage {
 
     public ArrayList<Lutemon> getLutemons() {
         return lutemons;
+    }
+
+    public void removeLutemon(int id) {
+        int i = 0;
+        String wantedLutemonID = Integer.toString(id);
+        for(Lutemon lutemon : lutemons) {
+            if (Integer.toString(lutemon.getId()).equals(wantedLutemonID)) {
+                break;
+            }
+            i++;
+        }
+        lutemons.remove(i);
     }
 
     public void saveLutemons(Context context) {

@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class BattleActivity extends AppCompatActivity {
+    private ArrayList<Lutemon> lutemons = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

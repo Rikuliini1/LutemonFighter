@@ -11,6 +11,8 @@ public class Lutemon implements Serializable {
     protected int health;
     protected int maxHealth;
     protected int id;
+    protected int lutemonTypeIcon;
+    protected int lutemonDeleteIcon;
 
     public Lutemon(String name, String type, int attack, int defense, int experience, int health, int maxHealth) {
         this.name = name;
@@ -46,6 +48,12 @@ public class Lutemon implements Serializable {
     }
     public int getId() {
         return id;
+    }
+    public int getLutemonTypeIcon() {
+        return lutemonTypeIcon;
+    }
+    public int getLutemonDeleteIcon() {
+        return lutemonDeleteIcon;
     }
 }
 
