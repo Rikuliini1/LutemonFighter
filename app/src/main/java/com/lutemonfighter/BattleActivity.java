@@ -12,7 +12,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
+import java.util.ArrayList;
+
 public class BattleActivity extends AppCompatActivity {
+    private ArrayList<Lutemon> lutemons = new ArrayList<>();
 
     private Storage storage;
 

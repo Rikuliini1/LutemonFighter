@@ -8,10 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class StatisticsActivity extends AppCompatActivity {
     private Storage storage;
     private RecyclerView recyclerView;
+    private static StatisticsActivity statisticsActivity = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,17 @@ public class StatisticsActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.rvLutemonList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new LutemonListAdapter(storage.getLutemons(), getApplicationContext()));
+    }
+
+    public static StatisticsActivity getInstance() {
+        if (statisticsActivity == null) {
+            statisticsActivity = new StatisticsActivity();
+        }
+        return statisticsActivity;
+    }
+
+    public void lutemonMovedToTraining() {
+        Toast.makeText(this, "Lutemon moved to training", Toast.LENGTH_LONG).show();
     }
 
     public void switchToHomeActivity(View view) {
